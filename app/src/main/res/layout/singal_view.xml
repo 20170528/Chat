@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="23"
+        android:layout_height= "70dp" >
+
+        <ImageView
+            android:id="@+id/chat_item_portrat"
+            android:layout_width="match_parent"
+            android:contentDescription="user_portrait"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#941d1d"
+            android:gravity="center" />
+
+        <!--layout_gravity 子元素相对于容器-->
+        <TextView
+            android:id="@+id/chat_item_messagetips"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|end"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="100"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!--gravity="center_vertical"文字垂直居中显示-->
+
+            <TextView
+                android:id="@+id/chat_item_nickname"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="陈剑" />
+
+            <TextView
+                android:id="@+id/chat_item_messagetime"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="10：30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/chat_item_messageview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="林朝阳喜欢盘子正喜欢盘子正盘子正就舒服哈阿卡" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

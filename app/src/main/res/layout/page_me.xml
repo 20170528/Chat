@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.chenjian.chat.HeadZoomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@drawable/me_background">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/boy3"
+                    app:riv_border_color="#333333"
+                    app:riv_border_width="2dp"
+                    app:riv_oval="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="林朝阳"
+                    android:textColor="#fafafa"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.example.chenjian.chat.HeadZoomScrollView>
+
+
+</LinearLayout>
